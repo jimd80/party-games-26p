@@ -1,0 +1,7 @@
+- Create 1 zip file from the Gerber-JLCPCB folder
+- Upload this zip to jlcpcb.com (choose Add gerber file)
+- Select your Quantity (the more the cheaper per board)
+- Change PCB Color to Black
+- Change Surface Finish to LeadFree HASL (If ROHS is required in your country, always the case for the EU)
+- Choose Mark on PCB: Remove Mark
+All other options are oke by default
