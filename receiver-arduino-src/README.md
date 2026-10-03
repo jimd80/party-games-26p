@@ -26,6 +26,7 @@ Use Arduino IDE or VS Code with PlatformIO to directly flash the hex file you ca
 ![Arduino connection](images/microbit-arduino-connection.png)
 
 Alternatively, for a Pro Micro the wiring is different:
+
 ![Pro Micro connection](images/microbit-promicro-connection.png)
 
 ## Extra features when using the PCB

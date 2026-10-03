@@ -23,20 +23,16 @@ For the sender you have 2 options:
 - A micro:bit with a battery box
 - Or build the [game controller](https://github.com/jimd80/pxt-coderdojo-controller)
 
-Load the hex file from [sender-microbit-src](sender-microbit-src/README.md) into each sender micro:bit using [MakeCode](https://makecode.microbit.org/#editor) or drag it to the `MICROBIT` folder in your file manager.
+Load [microbit-GameController-v25.12.hex](sender-microbit-src/microbit-GameController-v25.12.hex) from [sender-microbit-src](sender-microbit-src/README.md) into each sender micro:bit using [MakeCode](https://makecode.microbit.org/#editor) or drag it to the `MICROBIT` folder in your file manager.
 
 ### The receiver
-Get an Arduino Micro, or the Pro Micro clone. Flash the hex file from [receiver-arduino-src](receiver-arduino-src/README.md) into the Arduino.
+Get an Arduino Micro, or the Pro Micro clone. Flash [receiver-arduino-v25.7.hex](receiver-arduino-src/release/receiver-arduino-v25.7.hex) from [receiver-arduino-src](receiver-arduino-src/README.md) into the Arduino.
 
-Get a dedicated micro:bit to use as a receiver. Flash the hex file from [receiver-microbit-src](receiver-microbit-src/README.md) into the receiver micro:bit.
+Get a dedicated micro:bit to use as a receiver. Flash [microbit-GameReceiver-v26.3.hex](receiver-microbit-src/microbit-GameReceiver-v26.3.hex) from [receiver-microbit-src](receiver-microbit-src/README.md) into the receiver micro:bit.
 
 Connect the Arduino and micro:bit with 3 wires, as described in [receiver-arduino-src](receiver-arduino-src/README.md).
 
 Alternatively, build the receiver PCB as described in [receiver-pcb](receiver-pcb/README.md).
-
-You'll need an Arduino (compatible) board with an ATmega32U4 microcontroller, such as an Arduino Micro, Arduino Leonardo, or a Pro Micro. Pin 1 of the micro:bit should be connected to the serial port RXD pin of the controller.
-
-Wiring diagrams for the Arduino Micro and the Pro Micro can be found in [receiver-arduino-src](receiver-arduino-src/README.md).
 
 ## How to play
 There are plenty of modes to use this setup. We'll go from easy to advanced.
@@ -63,7 +59,7 @@ For an extended experience, you can let the players program their micro:bit by t
 **Receiver**: Just plug in the receiver; the default mode will just work.
 
 ### 8 button mode 26 player
-Games can be advanced to enable all 8 buttons from each player's controller. In this mode, the game not only needs to look at the letter that was pressed, but also at the preceding number, which indicates the button. Each button press from a player is sent as 2 keystrokes, like `5c` = button 5 for player c. More information can be found in [sender-microbit-src](sender-microbit-src/README.md).
+Games can be advanced to enable all 8 buttons from each player's controller. In this mode, the game not only needs to look at the letter that was pressed, but also at the preceding number, which indicates the button. Each button press from a player is sent as 2 keystrokes, like `5c` = button 5 for player c. More information can be found in [games-examples](games-examples/README.md).
 
 This mode only works if you have both the [game controller](https://github.com/jimd80/pxt-coderdojo-controller) and [receiver PCB](receiver-pcb/README.md).
 
